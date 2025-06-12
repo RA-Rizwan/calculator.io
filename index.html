@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Calculator.io</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-white custom-nav">
+      <div class="container-fluid d-flex justify-content-between">
+        <a class="navbar-brand" href="#"><h2>Calculator.io</h2></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-center me-5" id="navbarNav">
+          <ul class="navbar-nav gap-3 mx-auto">
+            <li class="nav-item">
+              <a class="nav-link active a-1" aria-current="page" href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link a-1" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link a-1" href="#">Pricing</a>
+            </li>
+          </ul>
+        </div>
+        <button class="button d-none d-lg-block" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Get in touch
+          <div class="hoverEffect">
+            <div></div>
+          </div>
+        </button>
+      </div>
+    </nav>
+    <!-- get in touch modal -->
+    <div class="modal" tabindex="-1" id="exampleModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title">Calculator.io</h2>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h4>Get in touch</h4>
+              <p>Submit your query here.</p>
+              <label class="mt-2" for="">Full Name</label>
+              <input class="w-100" type="text" placeholder="Enter Your Name">
+              <label class="mt-2" for="">Enter Your Email</label>
+              <input class="w-100" type="text" placeholder="Enter Your Email">
+              <label class="mt-2" for="">Your Message</label>
+              <textarea rows="3" class=" me-4 w-100"  placeholder="Enter Your Message Here......."></textarea>
+            </div>
+           
+            <div class="modal-btn">
+         
+              <button type="button"class="modal-btn">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- NAVBAR END -->
+    <section class="hero-section container mt-5">
+      <div class="row">
+        <div class="col-lg-8 m-auto text-center">
+          <div class="typewriter">
+            <h1 class="mt-5">Welcome to Calculator.io</h1>
+            <p class="mt-4">The Best Way to Calculate Things</p>
+          </div>
+        </div>
+      </div>
+      <div class="exp-btn mt-5">
+        <div class="wrapper">
+          <div class="link_wrapper">
+            <a href="#tab-1">Calculate Now</a>
+            <div class="icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 268.832 268.832"
+              >
+                <path
+                  d="M265.17 125.577l-80-80c-4.88-4.88-12.796-4.88-17.677 0-4.882 4.882-4.882 12.796 0 17.678l58.66 58.66H12.5c-6.903 0-12.5 5.598-12.5 12.5 0 6.903 5.597 12.5 12.5 12.5h213.654l-58.66 58.662c-4.88 4.882-4.88 12.796 0 17.678 2.44 2.44 5.64 3.66 8.84 3.66s6.398-1.22 8.84-3.66l79.997-80c4.883-4.882 4.883-12.796 0-17.678z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- HERO SECTION END -->
+    <section class="main container-fluid">
+      <div class="slider">
+        <div class="slide-track">
+          <div class="slide">
+            <img src="/img/a (1).svg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="/img/a (2).svg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="/img/a (3).svg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="/img/a (4).svg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="/img/a (5).svg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="/img/a (6).svg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="/img/a (7).svg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="/img/a (8).svg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="/img/a (9).svg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="/img/a (10).svg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="/img/a (11).svg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="/img/a (12).svg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="/img/a (13).svg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="/img/a (14).svg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="/img/a (15).svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDER END -->
+
+    <section class="discription container-fluid text-center my-5 py-5">
+        <p class="container">Welcome to Calculator.io! We have a range of free, easy to use calculators, conversion tools, and much more!
+
+            Our tools are designed to help you perform a wide range of calculations and conversions quickly and accurately, whether you're at home, at work, or on the go.</p>
+    </section>
+
+    <section class="container mt-5 main-table" id="tab-1">
+      <div class="d-flex align-items-start">
+        <div
+          class="nav flex-column nav-pills me-3 nav-main-table"
+          id="v-pills-tab"
+          role="tablist"
+          aria-orientation="vertical"
+        >
+          <button
+            class="nav-link active"
+            id="v-pills-home-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#v-pills-home"
+            type="button"
+            role="tab"
+            aria-controls="v-pills-home"
+            aria-selected="true"
+          >
+            Addition
+          </button>
+          <button
+            class="nav-link"
+            id="v-pills-profile-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#v-pills-profile"
+            type="button"
+            role="tab"
+            aria-controls="v-pills-profile"
+            aria-selected="false"
+          >
+            Subtraction
+          </button>
+          <button
+            class="nav-link"
+            id="v-pills-disabled-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#v-pills-disabled"
+            type="button"
+            role="tab"
+            aria-controls="v-pills-disabled"
+            aria-selected="false"
+          >
+            Multiplication
+          </button>
+          <button
+            class="nav-link"
+            id="v-pills-messages-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#v-pills-messages"
+            type="button"
+            role="tab"
+            aria-controls="v-pills-messages"
+            aria-selected="false"
+          >
+            Division
+          </button>
+          <button
+            class="nav-link"
+            id="v-pills-settings-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#v-pills-settings"
+            type="button"
+            role="tab"
+            aria-controls="v-pills-settings"
+            aria-selected="false"
+          >
+            Interest Calculation
+          </button>
+          <button
+            class="nav-link"
+            id="v-pills-rome-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#v-pills-rome"
+            type="button"
+            role="tab"
+            aria-controls="v-pills-rome"
+            aria-selected="true"
+          >
+            Modulus
+          </button>
+          <button
+            class="nav-link"
+            id="v-pills-rrofile-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#v-pills-rrofile"
+            type="button"
+            role="tab"
+            aria-controls="v-pills-rrofile"
+            aria-selected="false"
+          >
+            BMI Calculate
+          </button>
+          <button
+            class="nav-link"
+            id="v-pills-risabled-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#v-pills-risabled"
+            type="button"
+            role="tab"
+            aria-controls="v-pills-risabled"
+            aria-selected="false"
+          >
+            Temperature Converter
+          </button>
+          <button
+            class="nav-link"
+            id="v-pills-ressages-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#v-pills-ressages"
+            type="button"
+            role="tab"
+            aria-controls="v-pills-ressages"
+            aria-selected="false"
+          >
+            Square Calculate
+          </button>
+          <button
+            class="nav-link"
+            id="v-pills-rettings-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#v-pills-rettings"
+            type="button"
+            role="tab"
+            aria-controls="v-pills-rettings"
+            aria-selected="false"
+          >
+            Area of circle
+          </button>
+        </div>
+        <div class="tab-content" id="v-pills-tabContent">
+          <div
+            class="tab-pane fade show active"
+            id="v-pills-home"
+            role="tabpanel"
+            aria-labelledby="v-pills-home-tab"
+            tabindex="0"
+          >
+            <div class="add-bx mt-3">
+              <h2 class="text-center">Add two numbers</h2>
+              <div
+                class="d-flex align-items-center justify-content-center flex-wrap gap-3"
+              >
+                <div class="input-field">
+                  <input type="number" id="num1" required />
+                  <label>Enter First Number</label>
+                </div>
+                <span>+</span>
+                <div class="input-field">
+                  <input type="number" id="num2" required />
+                  <label>Enter Second Number</label>
+                </div>
+                <div class="input-field">
+                  <span>=</span>
+                  <input
+                    type="Text"
+                    id="result"
+                    placeholder="Result"
+                    readonly
+                  />
+                  <label></label>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center m-3 wrap-1">
+                <button class="button1" onclick="addNumbers()">
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="v-pills-profile"
+            role="tabpanel"
+            aria-labelledby="v-pills-profile-tab"
+            tabindex="0"
+          >
+            <div class="add-bx mt-3">
+              <h2 class="text-center">Subtract two numbers</h2>
+              <div
+                class="d-flex flex-wrap gap-3 align-items-center justify-content-center"
+              >
+                <div class="input-field">
+                  <input type="number" id="num3" required />
+                  <label>Enter First Number</label>
+                </div>
+                <span>-</span>
+                <div class="input-field">
+                  <input type="number" id="num4" required />
+                  <label>Enter Second Number</label>
+                </div>
+                <div class="input-field">
+                  <span>=</span
+                  ><input
+                    type="Text"
+                    id="result1"
+                    placeholder="Result"
+                    readonly
+                  />
+                  <label></label>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center m-3 wrap-1">
+                <button class="button1" onclick="subNumbers()">
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="v-pills-disabled"
+            role="tabpanel"
+            aria-labelledby="v-pills-disabled-tab"
+            tabindex="0"
+          >
+            <div class="add-bx mt-3">
+              <h2 class="text-center">Multiply two numbers</h2>
+              <div
+                class="d-flex align-items-center justify-content-center flex-wrap gap-3"
+              >
+                <div class="input-field">
+                  <input type="number" id="num5" required />
+                  <label>Enter First Number</label>
+                </div>
+                <span> × </span>
+                <div class="input-field">
+                  <input type="number" id="num6" required />
+                  <label>Enter Second Number</label>
+                </div>
+                <div class="input-field">
+                  <span>=</span>
+                  <input
+                    type="Text"
+                    id="result2"
+                    placeholder="Result"
+                    readonly
+                  />
+                  <label></label>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center m-3 wrap-1">
+                <button class="button1" onclick="mulNumbers()">
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="v-pills-messages"
+            role="tabpanel"
+            aria-labelledby="v-pills-messages-tab"
+            tabindex="0"
+          >
+            <div class="add-bx mt-3">
+              <h2 class="text-center">Divide two numbers</h2>
+              <div
+                class="d-flex align-items-center justify-content-center flex-wrap gap-3"
+              >
+                <div class="input-field">
+                  <input type="number" id="num7" required />
+                  <label>Enter First Number</label>
+                </div>
+                <span> ÷ </span>
+                <div class="input-field">
+                  <input type="number" id="num8" required />
+                  <label>Enter Second Number</label>
+                </div>
+                <div class="input-field">
+                  <span>=</span>
+                  <input
+                    type="Text"
+                    id="result3"
+                    placeholder="Result"
+                    readonly
+                  />
+                  <label></label>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center m-3 wrap-1">
+                <button class="button1" onclick="divNumbers()">
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="v-pills-settings"
+            role="tabpanel"
+            aria-labelledby="v-pills-settings-tab"
+            tabindex="0"
+          >
+            <div class="add-bx mt-3">
+              <h2 class="text-center">Calculate the interest</h2>
+              <div
+                class="d-flex flex-wrap align-items-center justify-content-center flex-wrap gap-3"
+              >
+                <div class="input-field">
+                  <input type="number" id="num11" required />
+                  <label>Enter amount</label>
+                </div>
+                <div class="input-field">
+                  <input type="number" id="num12" required />
+                  <label>Enter interest rate %</label>
+                </div>
+                <div class="input-field">
+                  <input type="number" id="num13" required />
+                  <label>Enter period in years</label>
+                </div>
+
+                <div class="input-field">
+                  <input
+                    type="Text"
+                    id="result5"
+                    placeholder="Result"
+                    readonly
+                  />
+                  <label></label>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center m-3 wrap-1">
+                <button class="button1" onclick="intNumbers()">
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="v-pills-rome"
+            role="tabpanel"
+            aria-labelledby="v-pills-rome-tab"
+            tabindex="0"
+          >
+            <div class="add-bx mt-3">
+              <h2 class="text-center">Calculate the remainder</h2>
+              <div
+                class="d-flex align-items-center justify-content-center flex-wrap gap-3"
+              >
+                <div class="input-field">
+                  <input type="number" id="num9" required />
+                  <label>Enter First Number</label>
+                </div>
+                <span> % </span>
+                <div class="input-field">
+                  <input type="number" id="num10" required />
+                  <label>Enter Second Number</label>
+                </div>
+                <div class="input-field">
+                  <span>=</span>
+                  <input
+                    type="Text"
+                    id="result4"
+                    placeholder="Result"
+                    readonly
+                  />
+                  <label></label>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center m-3 wrap-1">
+                <button class="button1" onclick="remNumbers()">
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="v-pills-rrofile"
+            role="tabpanel"
+            aria-labelledby="v-pills-rrofile-tab"
+            tabindex="0"
+          >
+            <div class="add-bx mt-3">
+              <h2 class="text-center">BMI Calculate</h2>
+              <div
+                class="d-flex align-items-center justify-content-center gap-3 flex-wrap"
+              >
+                <div class="input-field">
+                  <input type="number" id="num14" required />
+                  <label>Enter Weight in kg</label>
+                </div>
+                <div class="input-field">
+                  <input type="number" id="num15" required />
+                  <label>Enter Height in meter</label>
+                </div>
+                <div class="input-field">
+                  <span>=</span>
+                  <input
+                    type="Text"
+                    id="result6"
+                    placeholder="Result"
+                    readonly
+                  />
+                  <label></label>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center m-3 wrap-1">
+                <button class="button1" onclick="bmiNumbers()">
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="v-pills-risabled"
+            role="tabpanel"
+            aria-labelledby="v-pills-risabled-tab"
+            tabindex="0"
+          >
+            <div class="add-bx mt-3">
+              <h2 class="text-center">
+                Temperature Convert to Fahrenheit (°F)
+              </h2>
+              <div
+                class="d-flex align-items-center justify-content-center flex-wrap gap-3"
+              >
+                <div class="input-field">
+                  <input type="number" id="num16" required />
+                  <label>Enter temperature in Celsius (°C)</label>
+                </div>
+
+                <div class="input-field">
+                  <span>=</span
+                  ><input
+                    type="Text"
+                    id="result7"
+                    placeholder="Result"
+                    readonly
+                  />
+                  <label></label>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center m-3 wrap-1">
+                <button class="button1" onclick="tempNumbers()">Convert</button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="v-pills-ressages"
+            role="tabpanel"
+            aria-labelledby="v-pills-ressages-tab"
+            tabindex="0"
+          >
+            <div class="add-bx mt-3">
+              <h2 class="text-center">Square of the number</h2>
+              <div
+                class="d-flex align-items-center justify-content-center gap-3 flex-wrap"
+              >
+                <div class="input-field">
+                  <input type="number" id="num17" required />
+                  <label>Enter the number</label>
+                </div>
+
+                <div class="input-field">
+                  <span>=</span>
+                  <input
+                    type="Text"
+                    id="result8"
+                    placeholder="Result"
+                    readonly
+                  />
+                  <label></label>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center m-3 wrap-1">
+                <button class="button1" onclick="squNumbers()">
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="v-pills-rettings"
+            role="tabpanel"
+            aria-labelledby="v-pills-rettings-tab"
+            tabindex="0"
+          >
+            <div class="add-bx mt-3">
+              <h2 class="text-center">Calculate circle area</h2>
+              <div
+                class="d-flex align-items-center justify-content-center flex-wrap gap-3"
+              >
+                <div class="input-field">
+                  <input type="number" id="num18" required />
+                  <label>Enter the radius</label>
+                </div>
+
+                <div class="input-field">
+                  <span>=</span>
+                  <input
+                    type="Text"
+                    id="result9"
+                    placeholder="Result"
+                    readonly
+                  />
+                  <label></label>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center m-3 wrap-1">
+                <button class="button1" onclick="radNumbers()">
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer start -->
+     <footer class="mt-5 discription-1">
+<div class=" pt-3 container-fluid "><p class="container text-center">Calculator.io's sole focus is to provide fast, comprehensive, convenient, free online calculators in a plethora of areas. Currently, we have around 200 calculators to help you "do the math" quickly in areas such as finance, fitness, health, math, and others, and we are still developing more. Our goal is to become the one-stop, go-to site for people who need to make quick calculations. Additionally, we believe the internet should be a source of free information. Therefore, all of our tools and services are completely free, with no registration required.
+
+
+    </p>
+    <p class="text-center copyright py-2"> © 2008 - 2025 Calculator.io by ❤️ Rizwan</p></div>
+
+     </footer>
+
+
+
+
+    <script>
+      function addNumbers() {
+        const num1 = parseFloat(document.getElementById("num1").value) || 0;
+        const num2 = parseFloat(document.getElementById("num2").value) || 0;
+        document.getElementById("result").value = num1 + num2;
+      }
+
+      function subNumbers() {
+        const num3 = parseFloat(document.getElementById("num3").value) || 0;
+        const num4 = parseFloat(document.getElementById("num4").value) || 0;
+        document.getElementById("result1").value = num3 - num4;
+      }
+      function mulNumbers() {
+        const num5 = parseFloat(document.getElementById("num5").value) || 0;
+        const num6 = parseFloat(document.getElementById("num6").value) || 0;
+        document.getElementById("result2").value = num5 * num6;
+      }
+      function divNumbers() {
+        const num7 = parseFloat(document.getElementById("num7").value) || 0;
+        const num8 = parseFloat(document.getElementById("num8").value) || 0;
+        document.getElementById("result3").value = num7 / num8;
+      }
+      function remNumbers() {
+        const num9 = parseFloat(document.getElementById("num9").value) || 0;
+        const num10 = parseFloat(document.getElementById("num10").value) || 0;
+        document.getElementById("result4").value = num9 % num10;
+      }
+      function intNumbers() {
+        const num11 = parseFloat(document.getElementById("num11").value) || 0;
+        const num12 = parseFloat(document.getElementById("num12").value) || 0;
+        const num13 = parseFloat(document.getElementById("num13").value) || 0;
+        document.getElementById("result5").value =
+          (num11 * num12 * num13) / 100;
+      }
+      function bmiNumbers() {
+        const num14 = parseFloat(document.getElementById("num14").value) || 0;
+        const num15 = parseFloat(document.getElementById("num15").value) || 0;
+        document.getElementById("result6").value = num14 / (num15 * num15);
+      }
+      function tempNumbers() {
+        const num16 = parseFloat(document.getElementById("num16").value) || 0;
+        document.getElementById("result7").value = (num16 * 9) / 5 + 32 + " °F";
+      }
+      function squNumbers() {
+        const num17 = parseFloat(document.getElementById("num17").value) || 0;
+        document.getElementById("result8").value = num17 ** 2;
+      }
+      function radNumbers() {
+        const num18 = parseFloat(document.getElementById("num18").value) || 0;
+        document.getElementById("result9").value = Math.PI * num18 ** 2;
+      }
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,521 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{margin: 0;
+padding: 0;
+box-sizing: border-box;}
+nav a{
+    font-family: Exo;
+    
+  }
+  
+h2{color: purple!important;
+font-weight: 700!important;
+text-shadow: 20px;}
+
+.custom-nav  {
+    position: relative;
+    padding-bottom: 10px; /* Adjust spacing */
+}
+
+.custom-nav::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px; /* Thickness of the border */
+    background: linear-gradient(90deg, white, purple, white);
+}
+
+/* From Uiverse.io by Wendell47 */ 
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 30px;
+    border: 0;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10rem;
+    transition: all 0.02s;
+    font-weight: bold;
+    font-family: Exo;
+    cursor: pointer;
+    color: rgb(37, 37, 37);
+    z-index: 0;
+    box-shadow: 0 0px 7px -5px rgba(0, 0, 0, 0.5);
+  }
+  
+  .button:hover {
+    background: rgb(193, 228, 248);
+    color: rgb(33, 0, 85);
+  }
+  
+  .button:active {
+    transform: scale(0.97);
+  }
+  
+  .hoverEffect {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  }
+  
+  .hoverEffect div {
+    background: rgb(222, 0, 75);
+    background: linear-gradient(
+      90deg,
+      rgba(222, 0, 75, 1) 0%,
+      rgba(191, 70, 255, 1) 49%,
+      rgba(0, 212, 255, 1) 100%
+    );
+    border-radius: 40rem;
+    width: 10rem;
+    height: 10rem;
+    transition: 0.4s;
+    filter: blur(20px);
+    animation: effect infinite 3s linear;
+    opacity: 0.5;
+  }
+  
+  .button:hover .hoverEffect div {
+    width: 8rem;
+    height: 8rem;
+  }
+  
+  @keyframes effect {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  li >.a-1{
+    color: black!important;
+    font-weight: 500;
+    background-image: linear-gradient(
+      to right,
+      purple,
+      purple 50%,
+      purple 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .a-1:before{
+    content: '';
+    background: purple;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .a-1:hover {
+   background-position: 0;
+  }
+  
+  .a-1:hover::before{
+    width: 100%;
+  }
+  
+/* BGGGG */
+/* Cool infinite background scrolling animation.
+ * Twitter: @kootoopas
+ */
+
+/* Exo thin font from Google. */
+@import url(https://fonts.googleapis.com/css?family=Exo:100);
+
+/* Background data (Original source: https://subtlepatterns.com/grid-me/) */
+
+/* Animations */
+@-webkit-keyframes bg-scrolling-reverse {
+  100% { background-position: 50px 50px; }
+}
+@-moz-keyframes bg-scrolling-reverse {
+  100% { background-position: 50px 50px; }
+}
+@-o-keyframes bg-scrolling-reverse {
+  100% { background-position: 50px 50px; }
+}
+@keyframes bg-scrolling-reverse {
+  100% { background-position: 50px 50px; }
+}
+
+@-webkit-keyframes bg-scrolling {
+  0% { background-position: 50px 50px; }
+}
+@-moz-keyframes bg-scrolling {
+  0% { background-position: 50px 50px; }
+}
+@-o-keyframes bg-scrolling {
+  0% { background-position: 50px 50px; }
+}
+@keyframes bg-scrolling {
+  0% { background-position: 50px 50px; }
+}
+
+/* Main styles */
+body {
+  margin-top: 13.5rem;
+  color: #999;
+  font: 400 16px/1.5 exo, ubuntu, "segoe ui", helvetica, arial, sans-serif;
+  text-align: center;
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC") repeat 0 0;
+  -webkit-animation: bg-scrolling-reverse .92s infinite linear;
+  -moz-animation: bg-scrolling-reverse .92s infinite linear;
+  -o-animation: bg-scrolling-reverse .92s infinite linear;
+  animation: bg-scrolling-reverse .92s infinite linear;
+}
+
+/* NAVBAR END HERE */
+
+/* DEMO-SPECIFIC STYLES */
+.typewriter h1 {
+    font-weight: 700;
+    color: purple;
+    font-family: Exo;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 30px 20px; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .20em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(30, end) infinite,
+      blink-caret .5s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 95% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+  }
+
+  .hero-section p{ font-family: Exo;
+font-size: 2rem;
+font-weight: 500;}
+
+.exp-btn{position: relative;}
+
+.exp-btn .wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .exp-btn .link_wrapper{
+    position: relative;
+  }
+  
+  .exp-btn a{
+    display: block;
+    width: 250px;
+    height: 50px;
+    line-height: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    background: purple;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 3px solid purple;
+    transition: all .35s;
+    border-radius: 15px;
+  }
+  
+  .icon{
+    width: 50px;
+    height: 50px;
+    border: 3px solid transparent;
+    position: absolute;
+    transform: rotate(45deg);
+    right: 0;
+    top: 0;
+    z-index: -1;
+    transition: all .35s;
+  }
+  
+  .icon svg{
+    width: 30px;
+    position: absolute;
+    top: calc(50% - 15px);
+    left: calc(50% - 15px);
+    transform: rotate(-317deg);
+    fill: purple;
+    transition: all .35s;
+  }
+  
+  .exp-btn a:hover{
+    width: 200px;
+    border: 3px solid purple;
+    background: transparent;
+    color: purple;
+  }
+  
+  .exp-btn a:hover + .icon{
+    border: 3px solid purple;
+    right: -25%;
+    
+  }
+  
+
+
+/* HERO SECTION END */
+.main{margin-top: 130px;}
+
+@media only screen and (max-width: 400px) {
+   .main img{width: 50px;
+        height: 50px;
+        animation: scroll 60s linear infinite;
+        filter: brightness(0) saturate(100%) invert(9%) sepia(100%) saturate(6556%) hue-rotate(298deg) brightness(66%) contrast(103%);
+    }
+  }
+img { 
+    width: 100px;
+    height: 100px;
+    animation: scroll 60s linear infinite;
+    filter: brightness(0) saturate(100%) invert(9%) sepia(100%) saturate(6556%) hue-rotate(298deg) brightness(66%) contrast(103%);
+  }
+  
+  .slide-track {
+    width: 100%;
+    display: flex;
+    gap: 3em;
+    overflow: hidden;
+  }
+  
+  .slider {
+    margin-top: 20px;
+    background-color: transparent;
+    padding: 1em 2em;
+  }
+  
+  @keyframes scroll {
+    0% {transform: translateX(0);}
+    100% {transform: translatex(-1000%)}
+  }
+
+  /* SLIDER END */
+
+  .input-field{
+    position: relative;
+  }
+  .input-field input{
+     width: 350px;
+    height: 60px;
+    border-radius: 6px;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 0 15px;
+    border: 2px solid purple;
+    background: transparent;
+    color: purple;
+    outline: none;
+  }
+  .input-field label{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: purple;
+    font-size: 19px;
+    pointer-events: none;
+    transition: 0.3s;
+  }
+  input:focus{
+    border: 2px solid purple;
+  }
+  input:focus ~ label,
+  input:valid ~ label{
+    top: 0;
+    left: 15px;
+    font-size: 16px;
+    padding: 0 2px;
+    background: white;
+  }
+
+  .wrap-1 {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .button1 {
+    min-width: 300px;
+    min-height: 60px;
+    display: inline-flex;
+    font-family: Exo;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1.3px;
+    font-weight: 700;
+    color: white;
+    background: purple;
+  background: linear-gradient(90deg, purple 0%, purple 100%);
+    border: none;
+    border-radius: 1000px;
+    /* box-shadow: 12px 12px 24px purple; */
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    padding: 10px;
+    }
+  
+  .button1::before {
+  content: '';
+    border-radius: 1000px;
+    min-width: calc(300px + 12px);
+    min-height: calc(60px + 12px);
+    /* border: 6px solid purple;
+    box-shadow: 0 0 60px purple; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .3s ease-in-out 0s;
+  }
+  
+  .button1:hover, 
+  .button1:focus {
+    color: white;
+    transform: translateY(-6px);
+  }
+  
+  .button1:hover::before, 
+  .button1:focus::before {
+    opacity: 1;
+  }
+  
+  .button1::after {
+    content: '';
+    width: 30px; height: 30px;
+    border-radius: 100%;
+    border: 6px solid purple;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ring 1.5s infinite;
+  }
+  
+  .button1:hover::after, 
+  .button1:focus::after {
+    animation: none;
+    display: none;
+  }
+  
+  @keyframes ring {
+    0% {
+      width: 30px;
+      height: 30px;
+      opacity: 1;
+    }
+    100% {
+      width: 100px;
+      height: 100px;
+      opacity: 0;
+    }
+  }
+  .add-bx{padding: 80px 50px !important;}
+
+.add-bx span{font-size: 25px;
+color: purple;
+font-weight: 700;}
+
+/* Main table start */
+.main-table{border: 3px solid #800080;
+border-radius: 20px;}
+
+.nav-main-table{border-right: 3px solid purple;
+padding: 20px;}
+
+.nav-pills {
+    --bs-nav-pills-border-radius: var(--bs-border-radius);
+    --bs-nav-pills-link-active-color: #fff;
+    --bs-nav-pills-link-active-bg: #800080!important;
+}
+
+.nav{--bs-nav-link-color: purple!important;
+font-family: Exo!important;
+font-weight: 500!important;
+font-size: 16px!important;
+}
+
+
+.discription{ background-color: #800080;
+    color: #fff;
+font-family: Exo;
+font-weight: 300;
+font-size: 24px;}
+
+.discription-1{ background-color: #800080;
+    color: #fff;
+font-family: Exo;
+font-weight: 300;
+font-size: 16px;
+margin-bottom: -20px;}
+
+.copyright{border-top: 1px solid white;
+}
+
+.modal{font-family: Exo !important;
+color: #800080!important;}
+
+.modal input,textarea{
+    /* width: 350px;
+   height: 60px; */
+   border-radius: 6px;
+   font-size: 18px;
+   font-weight: 500;
+   padding: 5px 15px;
+   border: 1px solid purple;
+   background: transparent;
+   color: purple;
+   outline: none;
+}
+.modal-btn{display: flex;
+justify-content: center;
+align-items: center;
+margin-bottom: 20px;
+}
+.modal-btn button{background-color: #800080;
+color: #fff
+;
+border: none;
+border-radius: 20px;
+padding: 10px 70px;
+font-weight: 500;}
